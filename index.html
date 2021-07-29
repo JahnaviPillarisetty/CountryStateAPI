@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountryCityState</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <form id="countryForm">
+        <b> Select any Country from the dropdown </b><br>
+        <select id="countryList" name="countryList" onchange="fetchStateDetails()">            
+        </select>      
+    </form><br>
+    <form id="stateForm">
+        <b> Select any State from the dropdown </b><br>
+        <select id="stateList" name="stateList" onchange="fetchCityDetails()">            
+        </select>      
+    </form><br>
+    <form id="cityForm">
+        <b> Cities </b><br>
+        <select id="cityList" name="cityList">            
+        </select>      
+    </form>
+
+</body>
+
+</html>
